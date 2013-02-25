@@ -1,0 +1,10 @@
+<div class="carousel slide">
+    <div class="carousel-inner">
+        <div ng-repeat="slide in slides" class="item {{ slide.active }}">
+            <img ng-src="{{slide.src}}" />
+        </div>
+    </div>
+    <span ng-transclude></span>
+    <a class="carousel-control left" href="#{{id}}" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#{{id}}" data-slide="next">&rsaquo;</a>
+</div>
